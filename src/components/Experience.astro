@@ -1,0 +1,30 @@
+---
+import ExperienceItem from "./ExperienceItem.astro"
+const EXPERIENCE = [
+  {
+    date: "Enero 2024 - Actualmente...",
+    title: "Desarrollador Software Web y Mobile",
+    company: "Tic Service - Barranquilla, Colombia",
+    description:
+      "Responsable de una plataforma web para una empresa de logística con React, Node.js, Express, Sql Server y desarrollador Mobile con React Native para una plataforma Educativa, entre otros proyectos de tipo CRM...",
+    /* link: "", */
+  },
+  {
+    date: "Febrero 2023 - Diciembre 2023",
+    title: "Desarrollador Software Web",
+    company: "Pastas Comarrico - Barranquilla, Colombia",
+    description:
+      "Responsable de la plataforma Tarjetas de Anormalidades, para la empresa Pastas Comarrico, en la cual se gestionan las solicitudes de las tarjetas de anormalidades de los clientes de la empresa. Se utilizo React, Laravel, MySQL, Entre otras tecnologias.",
+  },
+]
+---
+
+<ol class="relative mt-16">
+  {
+    EXPERIENCE.map((experience) => (
+      <li class="">
+        <ExperienceItem {...experience} />
+      </li>
+    ))
+  }
+</ol>
